@@ -1,7 +1,7 @@
-export default class Currency {
-    constructor(code, name) {
-      this._code = code;
+export default class Airport {
+    constructor(name, code) {
       this._name = name;
+      this._code = code;
     }
   
     get name() {
@@ -20,7 +20,7 @@ export default class Currency {
       this._code = cod;
     }
   
-    displayFullCurrency() {
-      return `${this.name} (${this.code})`;
+    toString() {
+      return `[object ${this.code}]`;
     }
   }
