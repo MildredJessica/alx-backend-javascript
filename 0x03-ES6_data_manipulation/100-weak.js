@@ -1,6 +1,6 @@
 export const weakMap = new WeakMap();
 
-export function queryAPI(endpoint) {
+export default function queryAPI(endpoint) {
   let numOfQueries = 0;
   if (weakMap.get(endpoint) numofQueries = weakMap.get(endpoint);
   weakMap.set(endpoint, numOfQueries + 1);

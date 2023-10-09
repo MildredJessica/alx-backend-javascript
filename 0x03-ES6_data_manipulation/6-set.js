@@ -1,9 +1,7 @@
-export default function hasValuesFromArray(set, array) {
+export default function hasValuesFromArray(array) {
+  if (!Array.isArray(array)) {
+    throw new Error('Input is not an array');
+  }  
   const arraySet = new Set(array);
-  for (const elem of arraySet) {
-    if (!set.has(elem)) {
-      return false;
-    }
-  }
-  return true;
+  return arraySet;
 }
